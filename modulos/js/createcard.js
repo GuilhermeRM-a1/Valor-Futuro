@@ -1,7 +1,6 @@
 export function createCard(container, img, titulo, descricao) {
   const maxCards = 3; // limite por container
-  
-
+  const 
   if (container.querySelectorAll('.card').length >= maxCards) {
     return;
   }
