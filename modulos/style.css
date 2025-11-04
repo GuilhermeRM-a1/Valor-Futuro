@@ -158,6 +158,10 @@ img{
     height: 40px;
 }
 
+.sobre-nos {
+    background-color: #fff;
+}
+
 .footer {
   display: flex;                 
   justify-content: space-between;
@@ -191,7 +195,6 @@ img{
 }
 .footer-info {
     text-align: center;
-<<<<<<< HEAD
     margin: 0 auto;
     background-color: white;             
 }
@@ -232,7 +235,6 @@ img{
 }
 .dados h2{
     margin-bottom: 5px;
-=======
     height: 80px;
 }
 
