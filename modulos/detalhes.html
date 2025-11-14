@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/detalhes.css">
+    <title>Detalhes do Produto - Valor Futuro</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <a href="index.html">
+            <img id="logo" src="../assets/img/logo.png" alt="Logo Valor Futuro">
+        </a>
+        <button class="menu-toggle" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="nav-menu">
+            <ul class="ul-list">
+                <li><a href="index.html">Produtos</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#unidade">Unidade</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <nav class="nav-contato">
+                <a href="#" aria-label="WhatsApp"><img src="../assets/img/whatsapp.png" alt="WhatsApp"></a>
+                <a href="#" aria-label="Facebook"><img src="../assets/img/facebook.png" alt="Facebook"></a>
+                <a href="#" aria-label="Instagram"><img src="../assets/img/instagram.png" alt="Instagram"></a>
+            </nav>
+            <nav class="fontbutton">
+                <button id="aumentar" onclick="alterarFonte('aumentar')" aria-label="Aumentar fonte">A+</button>
+                <button id="diminuir" onclick="alterarFonte('diminuir')" aria-label="Diminuir fonte">A-</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb">
+        <div class="container-detalhes">
+            <a href="index.html">Home</a>
+            <span>/</span>
+            <span id="breadcrumb-produto">Produto</span>
+        </div>
+    </nav>
+
+    <!-- Seção Principal de Detalhes -->
+    <main class="detalhes-main">
+        <div class="container-detalhes">
+
+            <!-- Hero Section -->
+            <section class="produto-hero">
+                <div class="hero-imagem">
+                    <img id="produto-imagem" class="produto-imagem" src="" alt="">
+                </div>
+                <div class="hero-conteudo">
+                    <h1 id="produto-titulo" class="produto-titulo">Carregando...</h1>
+                    <p id="produto-descricao" class="produto-descricao"></p>
+                    <div class="hero-acoes">
+                        <a href="index.html" class="btn-secundario">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M19 12H5M12 19l-7-7 7-7" />
+                            </svg>
+                            Voltar
+                        </a>
+                        <button class="btn-primario">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                            </svg>
+                            Solicitar Contato
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seção Como Funciona -->
+            <section class="secao-info">
+                <div class="secao-header">
+                    <div class="secao-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M12 16v-4M12 8h.01" />
+                        </svg>
+                    </div>
+                    <h2 class="secao-titulo">Como Funciona</h2>
+                </div>
+                <div class="secao-conteudo">
+                    <p id="como-funciona" class="texto-destaque"></p>
+                </div>
+            </section>
+
+            <!-- Grid de Informações -->
+            <div class="grid-informacoes">
+                <!-- Benefícios -->
+                <section class="card-info">
+                    <div class="card-header">
+                        <div class="card-icon beneficios-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                        </div>
+                        <h3 class="card-titulo">Benefícios</h3>
+                    </div>
+                    <ul id="beneficios-lista" class="lista-itens">
+                    </ul>
+                </section>
+
+                <!-- Requisitos -->
+                <section class="card-info">
+                    <div class="card-header">
+                        <div class="card-icon requisitos-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                <circle cx="8.5" cy="7" r="4" />
+                                <path d="M20 8v6M23 11h-6" />
+                            </svg>
+                        </div>
+                        <h3 class="card-titulo">Requisitos</h3>
+                    </div>
+                    <ul id="requisitos-lista" class="lista-itens">
+                    </ul>
+                </section>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="contato">
+        <div>
+            <div class="footer-logo">
+                <img src="/assets/img/logo-footer.png" alt="logo">
+                <div class="footer-texto">
+                    <p>Soluções</p>
+                    <p>Financeiras</p>
+                </div>
+            </div>
+            <div class="logos-redes">
+                <p>Siga-nos: </p>
+                <img src="/assets/img/instagram-footer.png" alt="logo-insta">
+                <img src="/assets/img/facebook-footer.png" alt="logo-face">
+                <img src="/assets/img/whatsapp-footer.png" alt="logo-whats">
+            </div>
+        </div>
+
+        <nav class="dados">
+            <h2>Contatos</h2>
+            <p><img src="/assets/img/telefone-footer.png" alt="telefone"> (45) 99979-0963</p>
+            <p><img src="/assets/img/email-footer.png" alt="email"> valorfuturosolucoes@gmail.com</p>
+            <p><img src="/assets/img/user-footer.png" alt="privacidade"> <a href="#">Política de Privacidade</a></p>
+        </nav>
+    </footer>
+
+    <div class="footer-info">
+        <h4>CNPJ:53.484.282/0001-06</h4>
+        <p>EMPRESA AUTORIZADA E FISCALIZADA PELO BANCO CENTRAL DO BRASIL.</p>
+    </div>
+
+    <script type="module" src="js/detalhes.js"></script>
+    <script src="js/header.js"></script>
+</body>
+
+</html>

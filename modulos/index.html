@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/banner.css">
     <link rel="stylesheet" href="css/cards.css">
     <title>Valor Futuro</title>
@@ -14,26 +15,33 @@
 
     <!-- Header -->
     <header class="header">
-        <a href ="#">
-            <img id="logo" src="../assets/img/logo.png" alt="">
+        <a href="#">
+            <img id="logo" src="../assets/img/logo.png" alt="Logo Valor Futuro">
         </a>
+        <button class="menu-toggle" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <nav class="nav-menu">
             <ul class="ul-list">
                 <li><a href="#">Produtos</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">Unidade</a></li>
-                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#unidade">Unidade</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
             </ul>
         </nav>
-        <nav class="nav-contato">
-            <a><img src="../assets/img/whatsapp.png"></a>
-            <a><img src="../assets/img/facebook.png"></a>
-            <a><img src="../assets/img/instagram.png"></a>
-        </nav>
-        <nav class="fontbutton">
-            <button id="aumentar" onclick="alterarFonte('aumentar')">A+</button>
-            <button id="diminuir" onclick="alterarFonte('diminuir')">A-</button>
-        </nav>
+        <div class="header-right">
+            <nav class="nav-contato">
+                <a href="#" aria-label="WhatsApp"><img src="../assets/img/whatsapp.png" alt="WhatsApp"></a>
+                <a href="#" aria-label="Facebook"><img src="../assets/img/facebook.png" alt="Facebook"></a>
+                <a href="#" aria-label="Instagram"><img src="../assets/img/instagram.png" alt="Instagram"></a>
+            </nav>
+            <nav class="fontbutton">
+                <button id="aumentar" onclick="alterarFonte('aumentar')" aria-label="Aumentar fonte">A+</button>
+                <button id="diminuir" onclick="alterarFonte('diminuir')" aria-label="Diminuir fonte">A-</button>
+            </nav>
+        </div>
     </header>
 
     <!-- Banner -->
@@ -77,18 +85,20 @@
     <section class="produtos">
         <h2>Confira nossos Produtos e Serviços</h2>
 
-        <div class="cards-container" data-id="principais-produtos"> <!-- Cria um identificador para essa div pois ela possui o mesmo nome do que a de cima-->
+        <div class="cards-container" data-id="principais-produtos">
+            <!-- Cria um identificador para essa div pois ela possui o mesmo nome do que a de cima-->
 
-           
+
         </div>
     </section>
 
     <section class="produtos">
         <h2>Confira também</h2>
 
-        <div class="cards-container" data-id="outros-produtos"> <!-- Cria um identificador para essa div pois ela possui o mesmo nome do que a de cima-->
-           
-            </div>
+        <div class="cards-container" data-id="outros-produtos">
+            <!-- Cria um identificador para essa div pois ela possui o mesmo nome do que a de cima-->
+
+        </div>
         </div>
     </section>
 
@@ -96,8 +106,9 @@
         <div class="sobre-container">
 
             <div class="video">
-                <iframe width="800" height="315" loading="lazy" src="https://www.youtube.com/embed/Y7cpCDlRfV0?si=zptrU7TGA6mn_3-m"
-                    title="YouTube video player" frameborder="0"
+                <iframe width="800" height="315" loading="lazy"
+                    src="https://www.youtube.com/embed/Y7cpCDlRfV0?si=zptrU7TGA6mn_3-m" title="YouTube video player"
+                    frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                 </iframe>
@@ -124,8 +135,7 @@
     </section>
 
 
-     <footer class="footer">
-        <img src="../assets/img/male-doctor-showing-xray-pictures-teeth-tablet-convertido-de-jpg.webp" alt="">
+    <footer class="footer">
         <div>
             <div class="footer-logo">
 
@@ -147,13 +157,13 @@
 
 
         </div>
-        
-            <nav class="dados">
-                <h2>Contatos</h2>
-                <p><img src="/assets/img/telefone-footer.png" alt="telefone"> (45) 99979-0963</p>
-                <p><img src="/assets/img/email-footer.png" alt="email"> valorfuturosolucoes@gmail.com</p>
-                <p><img src="/assets/img/user-footer.png" alt="privacidade"> <a href="#">Política de Privacidade</a></p>
-            </nav>
+
+        <nav class="dados">
+            <h2>Contatos</h2>
+            <p><img src="/assets/img/telefone-footer.png" alt="telefone"> (45) 99979-0963</p>
+            <p><img src="/assets/img/email-footer.png" alt="email"> valorfuturosolucoes@gmail.com</p>
+            <p><img src="/assets/img/user-footer.png" alt="privacidade"> <a href="#">Política de Privacidade</a></p>
+        </nav>
 
         </nav>
 
@@ -164,5 +174,6 @@
     </div>
 </body>
 <script type="module" src="main.js"></script>
+<script src="js/header.js"></script>
 
 </html>
