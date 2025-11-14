@@ -1,16 +1,16 @@
-export function createCard(container, img, titulo, descricao) {
-  const maxCards = 3; // limite por container
+export function createCard(container, id, img, titulo, descricao) {
+  const maxCards = 3; 
   if (container.querySelectorAll('.card').length >= maxCards) {
     return;
   }
-  const fragment = document.createDocumentFragment();//cria o fragment
+  
   const card = document.createElement('div');
   card.classList.add('card');
 
   const imagem = document.createElement('img');
   imagem.classList.add('card-img');
   imagem.src = img;
-  imagem.alt = '';
+  imagem.alt = titulo;
 
   const h3 = document.createElement('h3');
   h3.classList.add('card-title');
@@ -23,8 +23,12 @@ export function createCard(container, img, titulo, descricao) {
   const buttonCard = document.createElement('button');
   buttonCard.classList.add('card-button');
   buttonCard.textContent = 'Saiba mais';
+  
+  // Configura o clique para abrir a página do produto correto
+  buttonCard.addEventListener('click', () => {
+      window.location.href = `pages/produto.html?id=${id}`;
+  });
 
   card.append(imagem, h3, p, buttonCard);
   container.appendChild(card);
-  container.appendChild(fragment); //Cria todos os cards de uma vez
 }

@@ -1,8 +1,14 @@
-import { createCard } from "./js/createcard";
+import { createCard } from "./js/createcard.js";
+import { produtos } from "./js/dados.js";
 
-createCard(container, "../assets/img/man-with-sales-woman-car-showroom-convertido-de-jpg.webp", "Consórcios", "Para automóveis, imóveis e serviços.");
-createCard(container, "../assets/img/happy-customer-buying-brand-new-car-local-car-dealership-convertido-de-jpg.webp", "Seguros", "A sua blindagem patrimonial com as coberturas certas");
-createCard(container, "../assets/img/middle-age-hispanic-woman-using-laptop-holding-credit-card-home-convertido-de-jpg.webp", "Financiamento", "Taxas imperdíveis e aprovação rápida."); 
-createCard(container, "../assets/img/medium-shot-environmental-engineer-holding-laptop-convertido-de-jpg.webp", "Energia Solar por Assinatura", "Economize ainda mais sua conta de energia sem custo.");
-createCard(container, "../assets/img/male-doctor-showing-xray-pictures-teeth-tablet-convertido-de-jpg.webp", "Plano Dental", "Invista na sua saúde bucal e qualidade de vida.");
-          
+// 1. Seleção dos Containers: 
+const principaisContainer = document.querySelector('[data-id="principais-produtos"]');
+const outrosContainer = document.querySelector('[data-id="outros-produtos"]');
+
+produtos.forEach(produto => {
+    if (produto.categoria === "principais" && principaisContainer) {
+        createCard(principaisContainer, produto.id, produto.img, produto.titulo, produto.descricaoCurta);
+    } else if (produto.categoria === "outros" && outrosContainer) {
+        createCard(outrosContainer, produto.id, produto.img, produto.titulo, produto.descricaoCurta);
+    }
+});
