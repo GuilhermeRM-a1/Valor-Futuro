@@ -1,9 +1,4 @@
 export function createCard(container, id, img, titulo, descricao) {
-  const maxCards = 3; 
-  if (container.querySelectorAll('.card').length >= maxCards) {
-    return;
-  }
-  
   const card = document.createElement('div');
   card.classList.add('card');
 
@@ -23,10 +18,10 @@ export function createCard(container, id, img, titulo, descricao) {
   const buttonCard = document.createElement('button');
   buttonCard.classList.add('card-button');
   buttonCard.textContent = 'Saiba mais';
-  
+
   // Configura o clique para abrir a página de detalhes do produto
   buttonCard.addEventListener('click', () => {
-      window.location.href = `detalhes.html?id=${id}`;
+  window.location.href = `detalhes.html?id=${id}`;
   });
 
   card.append(imagem, h3, p, buttonCard);
