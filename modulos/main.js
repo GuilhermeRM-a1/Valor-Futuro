@@ -18,7 +18,7 @@ function dinamiqueScroll() {
             
             createCard(container, "../assets/img/man-with-sales-woman-car-showroom-convertido-de-jpg.webp", "Consórcios", "Para automóveis, imóveis e serviços.");
             createCard(container, "../assets/img/happy-customer-buying-brand-new-car-local-car-dealership-convertido-de-jpg.webp", "Seguros", "A sua blindagem patrimonial com as coberturas certas");
-            createCard(container, "../assets/img/middle-age-hispanic-woman-using-laptop-holding-credit-card-home-convertido-de-jpg.webp", "Financiamento", "Taxas imperdíveis e aprovação rápida.");
+            createCard(container, "../assets/img/Financiamento.webp", "Financiamento", "Taxas imperdíveis e aprovação rápida.");
           }
 
           if (tipo === "outros-produtos") {
