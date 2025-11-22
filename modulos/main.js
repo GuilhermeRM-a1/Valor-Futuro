@@ -12,3 +12,6 @@ produtos.forEach(produto => {
         createCard(outrosContainer, produto.id, produto.img, produto.titulo, produto.descricaoCurta);
     }
 });
+
+
+
