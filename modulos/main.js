@@ -13,5 +13,31 @@ produtos.forEach(produto => {
     }
 });
 
+let initialZoom = 100; 
+const maxZoom = 140;
+const minZoom = 70;
 
 
+function alterarFonte(tamanho) {
+
+
+    if (tamanho === 'aumentar') {
+        if (initialZoom < maxZoom) {
+            initialZoom += 10  ;
+        }
+
+    }
+    if (tamanho === 'diminuir') {
+        if (initialZoom > minZoom) {
+            initialZoom -= 10;
+        }
+
+    }
+
+    document.documentElement.style.fontSize = initialZoom + "%";
+
+
+
+};
+
+window.alterarFonte = alterarFonte;
