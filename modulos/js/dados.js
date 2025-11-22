@@ -5,7 +5,7 @@ export const produtos = [
         titulo: "Consórcios",
         img: "../assets/img/man-with-sales-woman-car-showroom-convertido-de-jpg.webp",
         descricaoCurta: "Para automóveis, imóveis e serviços.",
-        descricaoLonga: "Com nossos consórcios, você planeja a compra do seu bem de forma segura e sem juros abusivos. Temos opções para carros, motos, caminhões, imóveis e até serviços como festas e viagens.",
+        descricaoLonga: "Com o consórcio, você planeja a compra do seu bem de forma segura e sem juros. Temos opções para carros, motos, caminhões, imóveis e até serviços como festas e viagens.",
         beneficios: [
             "Sem juros abusivos - pague apenas taxas administrativas",
             "Flexibilidade de parcelas conforme sua necessidade",
@@ -47,7 +47,7 @@ export const produtos = [
         id: 3,
         categoria: "principais",
         titulo: "Financiamento",
-        img: "../assets/img/middle-age-hispanic-woman-using-laptop-holding-credit-card-home-convertido-de-jpg.webp",
+        img: "../assets/img/Financiamento.webp",
         descricaoCurta: "Taxas imperdíveis e aprovação rápida.",
         descricaoLonga: "Precisa de crédito rápido? Nossas linhas de financiamento possuem taxas competitivas e aprovação agilizada para você realizar seus sonhos hoje mesmo.",
         beneficios: [
