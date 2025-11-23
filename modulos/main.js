@@ -13,30 +13,40 @@ produtos.forEach(produto => {
     }
 });
 
-let initialZoom = 100; 
+
+// ACESSIBILIDADE
+
 const maxZoom = 140;
 const minZoom = 70;
 
+    let tamanhoFonte = parseInt(localStorage.getItem("fontSize")) || 100;
+
+    document.documentElement.style.fontSize = tamanhoFonte + "%";
+
+    function aplicarTamanho() {
+        document.documentElement.style.fontSize = tamanhoFonte + "%";
+
+        // Salva no localStorage
+        localStorage.setItem("fontSize", tamanhoFonte.toString());
+    }
 
 function alterarFonte(tamanho) {
 
 
     if (tamanho === 'aumentar') {
-        if (initialZoom < maxZoom) {
-            initialZoom += 10  ;
+        if (tamanhoFonte < maxZoom) {
+            tamanhoFonte += 10;
+            aplicarTamanho();
         }
 
     }
     if (tamanho === 'diminuir') {
-        if (initialZoom > minZoom) {
-            initialZoom -= 10;
+        if (tamanhoFonte > minZoom) {
+            tamanhoFonte -= 10;
+            aplicarTamanho();
         }
 
     }
-
-    document.documentElement.style.fontSize = initialZoom + "%";
-
-
 
 };
 

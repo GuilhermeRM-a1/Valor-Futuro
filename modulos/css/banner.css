@@ -33,45 +33,19 @@
   line-height: 1.4;
 }
 
+.google-form {
+    
+    height: 20rem; /* ajuste conforme necessário */
+    border: none;
+    height: 500px;
+}
+
 .form-container {
   background: #fff;
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(0,0,0,0.2);
-  max-width: 350px;
-}
-
-.form-container h3 {
-  font-size: 1rem;
-  margin-bottom: 15px;
-  color: #333;
-}
-
-.form-container form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.form-container input,
-.form-container select {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-}
-
-.form-container button {
-  background: #000;
-  color: #fff;
-  padding: 12px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.form-container button:hover {
-  background: #333;
+ 
 }
 
 /* Responsivo */
