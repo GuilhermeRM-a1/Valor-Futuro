@@ -20,6 +20,9 @@ export function createCard(container, id, img, titulo, descricao) {
   buttonCard.textContent = 'Saiba mais';
 
   // Configura o clique para abrir a página de detalhes do produto
+  card.addEventListener('click', () => {
+  window.location.href = `detalhes.html?id=${id}`;
+  });
   buttonCard.addEventListener('click', () => {
   window.location.href = `detalhes.html?id=${id}`;
   });

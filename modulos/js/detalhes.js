@@ -9,7 +9,7 @@ const produtoEncontrado = produtos.find(p => p.id == id);
 if (produtoEncontrado) {
     
     const imagem = document.getElementById('produto-imagem');
-    imagem.src = produtoEncontrado.img;
+    imagem.src = produtoEncontrado.imgFinded;
     imagem.alt = produtoEncontrado.titulo;
 
 
