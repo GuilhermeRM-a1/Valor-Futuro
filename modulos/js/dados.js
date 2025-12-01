@@ -4,14 +4,14 @@ export const produtos = [
         categoria: "principais",
         titulo: "Consórcios",
         img: "../assets/img/man-with-sales-woman-car-showroom-convertido-de-jpg.webp",
+        imgFinded: "../assets/img/man-with-sales-woman-car-showroom-convertido-de-jpg.webp",
         descricaoCurta: "Para automóveis, imóveis e serviços.",
         descricaoLonga: "Com o consórcio, você planeja a compra do seu bem de forma segura e sem juros. Temos opções para carros, motos, caminhões, imóveis e até serviços como festas e viagens.",
         beneficios: [
             "Sem juros abusivos - pague apenas taxas administrativas",
-            "Flexibilidade de parcelas conforme sua necessidade",
             "Possibilidade de contemplação por lance ou sorteio",
             "Sem necessidade de entrada inicial",
-            "Proteção do seu investimento com garantia de compra"
+            "Proteção do seu investimento com a solidez do sistema de consórcios",
         ],
         requisitos: [
             "Documentação básica (RG, CPF, comprovante de residência)",
@@ -26,6 +26,7 @@ export const produtos = [
         categoria: "principais",
         titulo: "Seguros",
         img: "../assets/img/happy-customer-buying-brand-new-car-local-car-dealership-convertido-de-jpg.webp",
+        imgFinded: "../assets/img/happy-customer-buying-brand-new-car-local-car-dealership-convertido-de-jpg.webp",
         descricaoCurta: "A sua blindagem patrimonial com as coberturas certas",
         descricaoLonga: "Proteja o que é mais importante para você. Oferecemos seguros de vida, auto, residencial e empresarial com as melhores coberturas do mercado para garantir sua tranquilidade.",
         beneficios: [
@@ -41,49 +42,50 @@ export const produtos = [
             "Análise de perfil e necessidade",
             "Aprovação da seguradora"
         ],
-        comoFunciona: "Nossos seguros funcionam como uma proteção financeira para imprevistos. Você escolhe o tipo de seguro (vida, auto, residencial ou empresarial) e define o valor da cobertura. Mensalmente, você paga um prêmio e, em caso de sinistro coberto, a seguradora assume os custos conforme o contrato. Nossa equipe especializada ajuda você a escolher a melhor opção para seu perfil e necessidade."
+        comoFunciona: "Nossos seguros funcionam como uma proteção financeira para imprevistos. Você escolhe o tipo de seguro (vida, auto, residencial,empresarial,entre outros) e define o valor da cobertura. Mensalmente, você paga um prêmio e, em caso de sinistro coberto, a seguradora assume os custos conforme o contrato. Nossa equipe especializada ajuda você a escolher a melhor opção para seu perfil e necessidade."
     },
     {
         id: 3,
         categoria: "principais",
         titulo: "Financiamento",
         img: "../assets/img/Financiamento.webp",
-        descricaoCurta: "Taxas imperdíveis e aprovação rápida.",
-        descricaoLonga: "Precisa de crédito rápido? Nossas linhas de financiamento possuem taxas competitivas e aprovação agilizada para você realizar seus sonhos hoje mesmo.",
+        imgFinded: "../assets/img/financiamento.png",
+        descricaoCurta: "Taxas imperdíveis em mais de 10 linhas de crédito.",
+        descricaoLonga: "Precisa de crédito rápido? Nossas linhas de financiamento possuem taxas competitivas e excelentes oportunidades para você realizar seus sonhos rapidamente!",
         beneficios: [
             "Taxas de juros competitivas no mercado",
-            "Aprovação rápida em até 48 horas",
+            "Analise Rápida!",
             "Parcelas que cabem no seu bolso",
             "Diversas modalidades de financiamento",
             "Atendimento personalizado e humanizado"
         ],
         requisitos: [
-            "Renda comprovada mínima de R$ 1.500,00",
             "Documentação completa (RG, CPF, comprovante de residência e renda)",
             "Idade entre 18 e 70 anos",
             "CPF sem restrições graves",
             "Histórico de crédito positivo"
         ],
-        comoFunciona: "Nosso processo de financiamento é simples e rápido. Você preenche um cadastro com suas informações e documentação. Nossa equipe analisa seu perfil e apresenta as melhores opções de crédito disponíveis. Após a aprovação, o valor é liberado de forma rápida e você pode usar para o que precisar: compra de veículo, imóvel, reforma ou qualquer outro objetivo. Oferecemos condições flexíveis de pagamento para que você encontre a melhor opção."
+        comoFunciona: "Nosso processo de financiamento é simples e rápido. Você preenche um cadastro com suas informações. Nossa equipe irá realizar as simulações para você, e entrar em contato para podermos interagir e tirar as suas duvidas. Após a aprovação, o valor é liberado de forma rápida e você pode usar para o que precisar: compra de veículo, imóvel, reforma ou qualquer outro objetivo. Oferecemos condições flexíveis de pagamento para que você encontre a melhor opção."
     },
     {
         id: 4,
         categoria: "outros",
         titulo: "Energia Solar por Assinatura",
         img: "../assets/img/medium-shot-environmental-engineer-holding-laptop-convertido-de-jpg.webp",
+        imgFinded: "../assets/img/medium-shot-environmental-engineer-holding-laptop-convertido-de-jpg.webp",
         descricaoCurta: "Economize ainda mais sua conta de energia sem custo.",
-        descricaoLonga: "Reduza sua conta de luz sem precisar instalar painéis no telhado. Com a energia por assinatura, você economiza todos os meses de forma sustentável e inteligente.",
+        descricaoLonga: "Reduza sua conta de luz sem precisar instalar placa solar. Com a energia por assinatura, você economiza todos os meses de forma sustentável e inteligente.",
         beneficios: [
             "Economia de até 15% na conta de energia",
             "Sem necessidade de instalação de equipamentos",
             "Energia 100% limpa e renovável",
-            "Sem custo de instalação ou manutenção",
             "Contribuição para o meio ambiente"
         ],
         requisitos: [
             "Ser cliente de uma distribuidora de energia elétrica",
             "Possuir conta de energia ativa",
             "Documentação básica para cadastro",
+            "Possuir uma conta de luz com consumo compatível",
             "Aceitar os termos do contrato de assinatura"
         ],
         comoFunciona: "A energia solar por assinatura é uma forma inovadora de economizar na conta de luz. Você assina um plano mensal e passa a receber créditos de energia solar gerada em usinas compartilhadas. Esses créditos são descontados diretamente na sua conta de energia, reduzindo seu gasto mensal. Não é necessário instalar nada em sua casa - tudo funciona através do sistema de compensação de energia da distribuidora. É simples, sustentável e econômico!"
@@ -93,6 +95,7 @@ export const produtos = [
         categoria: "outros",
         titulo: "Plano Dental",
         img: "../assets/img/male-doctor-showing-xray-pictures-teeth-tablet-convertido-de-jpg.webp",
+        imgFinded: "../assets/img/male-doctor-showing-xray-pictures-teeth-tablet-convertido-de-jpg.webp",
         descricaoCurta: "Invista na sua saúde bucal e qualidade de vida.",
         descricaoLonga: "Sorria com confiança! Nossos planos odontológicos cobrem consultas, exames, limpezas e tratamentos complexos, com uma ampla rede credenciada.",
         beneficios: [
