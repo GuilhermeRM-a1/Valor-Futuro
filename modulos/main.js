@@ -1,5 +1,6 @@
 import { createCard } from "./js/createcard.js";
 import { produtos } from "./js/dados.js";
+import './formulario.js';
 
 // 1. Seleção dos Containers: 
 const principaisContainer = document.querySelector('[data-id="principais-produtos"]');
@@ -14,43 +15,47 @@ produtos.forEach(produto => {
 });
 
 
-// ACESSIBILIDADE
+document.addEventListener("DOMContentLoaded", () => {
+    // ACESSIBILIDADE
+    const maxZoom = 140;
+    const minZoom = 70;
 
-const maxZoom = 140;
-const minZoom = 70;
-
-let tamanhoFonte = parseInt(localStorage.getItem("fontSize")) || 100;
-
-document.documentElement.style.fontSize = tamanhoFonte + "%";
-
-function aplicarTamanho() {
+    let tamanhoFonte = parseInt(localStorage.getItem("fontSize")) || 100;
     document.documentElement.style.fontSize = tamanhoFonte + "%";
 
-    // Salva no localStorage
-    localStorage.setItem("fontSize", tamanhoFonte.toString());
-}
-
-function alterarFonte(tamanho) {
-
-
-    if (tamanho === 'aumentar') {
-        if (tamanhoFonte < maxZoom) {
-            tamanhoFonte += 10;
-            aplicarTamanho();
-        }
-
-    }
-    if (tamanho === 'diminuir') {
-        if (tamanhoFonte > minZoom) {
-            tamanhoFonte -= 10;
-            aplicarTamanho();
-        }
-
+    function aplicarTamanho() {
+        document.documentElement.style.fontSize = tamanhoFonte + "%";
+        localStorage.setItem("fontSize", tamanhoFonte.toString());
     }
 
-};
+    function alterarFonte(tamanho) {
+        if (tamanho === 'aumentar') {
+            if (tamanhoFonte < maxZoom) {
+                tamanhoFonte += 10;
+                aplicarTamanho();
+            }
+        }
+        if (tamanho === 'diminuir') {
+            if (tamanhoFonte > minZoom) {
+                tamanhoFonte -= 10;
+                aplicarTamanho();
+            }
+        }
+    }
 
-window.alterarFonte = alterarFonte;
+    const btnAumentar = document.getElementById("aumentar");
+    const btnDiminuir = document.getElementById("diminuir");
+
+    if (btnAumentar) {
+        btnAumentar.addEventListener("click", () => alterarFonte("aumentar"));
+    }
+    if (btnDiminuir) {
+        btnDiminuir.addEventListener("click", () => alterarFonte("diminuir"));
+    }
+});
+
+
+
 
 
 //FUNÇÃO SCROLL SUAVE
@@ -76,6 +81,7 @@ function scrollSuaveAte(elemento, duracao, offset) {
 
   requestAnimationFrame(animarScroll);
 }
+
 
 // EVENTOS DE CLIQUE NOS ITENS DO MENU
 
