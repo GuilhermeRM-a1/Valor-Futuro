@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/banner.css">
     <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/formulario.css">
     <title>Valor Futuro</title>
 </head>
 
@@ -41,8 +42,8 @@
                     aria-label="Instagram"><img src="../assets/img/instagram.png" alt="Instagram"></a>
             </nav>
             <nav class="fontbutton">
-                <button id="aumentar" onclick="alterarFonte('aumentar')" aria-label="Aumentar fonte">A+</button>
-                <button id="diminuir" onclick="alterarFonte('diminuir')" aria-label="Diminuir fonte">A-</button>
+                 <button type="button" id="aumentar" aria-label="Aumentar fonte">A+</button>
+                 <button type="button" id="diminuir" aria-label="Diminuir fonte">A-</button>
             </nav>
         </div>
     </header>
@@ -57,15 +58,47 @@
 
         <div class="overlay">
             <div class="banner-text">
-                <h1>O melhor do mercado em<br>favor do seu <strong>Bem-estar</strong> e da sua <strong>Família</strong>
+                <h1>O melhor do mercado a<br>favor do seu <strong>Bem-estar</strong> e da sua <strong>Família</strong>
                 </h1>
             </div>
 
             <div class="form-container">
-                <form>
-                    <iframe
-                        src="https://docs.google.com/forms/d/e/1FAIpQLSfnEptfqnRgZOE7akWq-n4i4_mVytymBkBJkLTs7CAzA64rlg/viewform?embedded=true"
-                        frameborder="0" marginheight="0" marginwidth="0" class="google-form"></iframe>
+              <form method="post">
+                <div id="nome-form">
+                    <label for="nome">Nome Completo:</label>
+                    <input id="nome" type="text" placeholder="Digite seu nome aqui"/>
+                </div>
+
+                <div id="email-form">
+                    <label for="email" >E-mail(Opcional)</label>
+                    <input id="email" type="email" placeholder="seuemail@exemplo.com">
+                </div>
+
+                <div id="telefone-form">
+                    <label for="telefone"> Telefone (DDD)</label>
+                    <input id="telefone" type="tel" placeholder="(11) 99999-9999">
+                </div>
+                
+                <div id="renda-form">
+                    <label for="renda">Renda média mensal? (Opcional) </label>
+                    <select id="renda" name="renda-mensal" required>>
+                        <option value="" disabled selected hidden>Selecione uma opção...</option>
+                        <option value="renda-baixa">Até R$2.000,00</option>
+                        <option value="renda-media">R$2.000,00 - R$5.000,00</option>
+                        <option value="renda-alta">Acima de R$5.000,00</option>
+                     </select>
+                </div>
+
+                <div id="objetivo-form">
+                    <label for="renda">Qual o seu objetivo financeiro? </label>
+                    <select id="objetivo" name="obetivo-financeiro" required>>
+                        <option value="" disabled selected hidden>Selecione uma opção...</option>
+                        <option value="investimento">Investimento</option>
+                        <option value="emprestimo">Empréstimo</option>
+                        <option value="planejamento">Planejamento Familiar</option>
+                    </select>
+                </div> 
+                    <button type="submit">Enviar Dados</button>
                 </form>
             </div>
         </div>
@@ -76,8 +109,7 @@
 
         <div class="cards-container" data-id="principais-produtos">
             <!-- Cria um identificador para essa div pois ela possui o mesmo nome do que a de cima-->
-
-
+            
         </div>
     </section>
 
@@ -173,7 +205,7 @@
         <p>EMPRESA AUTORIZADA E FISCALIZADA PELO BANCO CENTRAL DO BRASIL.</p>
     </div>
 </body>
-<script type="module" src="main.js"></script>
+<script type="module" src="main.js" defer></script>
 <script src="js/header.js"></script>
 
 </html>
